@@ -1,17 +1,42 @@
 body {
-  background: #BFDFED;
+  /* background: #BFDFED; */
+  background: #88bff1;
   text-align: center;
-  margin: 40px;
-  padding: 10px;
+  margin: auto;
+  padding: auto;
   font-size: 16px;
+}
+
+.line {
+  width: auto;
+  border-bottom: 3px solid #A3B096;
 }
 
 h1 {
   font-family: 'Lato', sans-serif;
   font-size: 3em;
-  margin: 0px;
-  padding: 0px;
+  margin: 10px;
+  padding: 10px;
 }
+
+.fire {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+.head1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.firehead {
+  width: 100%;
+  opacity: 70%;
+}
+
 
 h2 {
   font-family: 'Lato', sans-serif;
@@ -29,25 +54,25 @@ p {
   font-size: 1em;
   margin-left: auto;
   margin-right: auto;
-  max-width: 600px;
   padding: 10px;
   text-align: left;
 }
 
 ul {
-  list-style-type: none;
   margin: 10px;
   padding: 10px;
 }
 
 li {
+  text-decoration: none;
+  list-style-type: none;
   margin: 10px;
   padding: 0px;
 }
 
 .nav {
   background-color: #A3B096;
-  margin: 10px;
+  margin: 0px;
   padding: 15px;
   display: flex;
   flex-direction: row;
@@ -56,7 +81,6 @@ li {
 }
 
 a {
-  text-decoration: none;
   font-family: 'Lato', sans-serif;
   font-size: 1.25em;
   color: black;
@@ -65,12 +89,32 @@ a {
 a:hover {
   color: #BFDFED;
 }
+
+.photo {
+    border: 0;
+    margin: 35px;
+    width: 75%;
+    min-width: 200px;
+    max-width: 400px;
+}
+
+.images {
+  display: flex;
+  justify-content: flex-start;
+}
+
 @media screen and (max-width: 599px) {
+
+  h1 {
+    font-size: 2em;
+  }
   p {
     font-family: 'Playfair Display', serif;
-    font-size: 1em;
+    font-size: .75em;
     padding: 10px;
     text-align: left;
+    margin: 20px;
+    padding: auto;
   }
 
   ul {
@@ -80,15 +124,14 @@ a:hover {
   }
 
   li {
-    margin: 20px;
-    padding: 20px;
-    background-color: #A3B096;
+    margin: auto;
+    padding: 10px;
   }
 
   .nav {
-    /* background-color: #A3B096; */
-    margin: 10px;
-    padding: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -98,7 +141,7 @@ a:hover {
   a {
     text-decoration: none;
     font-family: 'Lato', sans-serif;
-    font-size: 1.25em;
+    font-size: 1em;
     color: black;
     margin: 10px;
   }
@@ -128,7 +171,7 @@ a:hover {
   }
 
   .nav {
-    background-color: #A3B096;
+    /* background-color: #A3B096; */
     margin: 10px;
     padding: 15px;
     display: flex;
