@@ -49,14 +49,6 @@ h3 {
   font-size: 1.25em;
 }
 
-p {
-  font-family: 'Playfair Display', serif;
-  font-size: 1em;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px;
-  text-align: left;
-}
 
 ul {
   margin: 10px;
@@ -70,7 +62,7 @@ li {
   padding: 0px;
 }
 
-.nav {
+#menu_nav {
   background-color: #A3B096;
   margin: 0px;
   padding: 15px;
@@ -78,6 +70,10 @@ li {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+}
+
+#menu_trigger {
+  display: none;
 }
 
 a {
@@ -90,6 +86,15 @@ a:hover {
   color: #BFDFED;
 }
 
+#text {
+  font-family: 'Playfair Display', serif;
+  font-size: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  text-align:left
+}
+
 .photo {
     border: 0;
     margin: 35px;
@@ -98,44 +103,27 @@ a:hover {
     max-width: 400px;
 }
 
-.images {
-  display: flex;
-  justify-content: flex-start;
+.photo:hover {
+  opacity: 40%;
 }
+
+#wrapper {
+  padding:0px;
+  width: 820px;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+}
+
 
 @media screen and (max-width: 599px) {
 
   h1 {
     font-size: 2em;
   }
+
   p {
-    font-family: 'Playfair Display', serif;
     font-size: .75em;
-    padding: 10px;
-    text-align: left;
-    margin: 20px;
-    padding: auto;
-  }
-
-  ul {
-    list-style-type: none;
-    margin: 10px;
-    padding: 10px;
-  }
-
-  li {
-    margin: auto;
-    padding: 10px;
-  }
-
-  .nav {
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
   }
 
   a {
@@ -144,6 +132,19 @@ a:hover {
     font-size: 1em;
     color: black;
     margin: 10px;
+  }
+
+  #menu_trigger {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: none;
+  }
+
+  #menu_nav {
+    display: none;
+    flex-direction: column;
   }
 }
 
