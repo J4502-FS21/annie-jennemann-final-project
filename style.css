@@ -7,10 +7,13 @@ body {
   font-size: 16px;
 }
 
-.line {
-  width: auto;
-  border-bottom: 3px solid #A3B096;
+#container {
+  background-image: url("images/back-01.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0% 50%;
 }
+
 
 h1 {
   font-family: 'Lato', sans-serif;
@@ -107,13 +110,20 @@ a:hover {
   opacity: 40%;
 }
 
-#wrapper {
-  padding:0px;
-  width: 820px;
-  height: auto;
-  margin: auto;
-  overflow: hidden;
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
+
+.graphic {
+  border: 0;
+  margin: 35px;
+  width: 75%;
+  min-width: 200px;
+  max-width: 400px;
+}
+
 
 
 @media screen and (max-width: 599px) {
