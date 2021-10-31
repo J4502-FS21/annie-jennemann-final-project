@@ -34,7 +34,7 @@ li {
   text-decoration: none;
   list-style-type: none;
   margin: 10px;
-  padding: 0px;
+  padding: 10px;
 }
 
 p {
@@ -79,6 +79,7 @@ p {
 }
 
 a {
+  text-decoration: none;
   font-family: 'Lato', sans-serif;
   font-size: 1.25em;
   color: black;
@@ -90,8 +91,8 @@ a:hover {
 
 .photo {
   border: 0;
-  margin: 20px;
-  width: 75%;
+  margin: 10px;
+  width: 85%;
   min-width: 200px;
   max-width: 400px;
 }
@@ -114,20 +115,27 @@ a:hover {
   max-width: 400px;
 }
 
-.captionoverlay {
-  margin-bottom: 30px;
+.captioncontainer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+.caption {
+  font-family: 'Playfair Display', serif;
+  margin-top: 0px;
+  text-align: center;
 }
 
 footer {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Lato', sans-serif;
   justify-content: center;
   margin-top: 40px;
   margin-bottom: 20px;
   padding: 10px;
   background-color: #A3B096;
+  font-weight: bold;
 }
 
 @media screen and (min-width:600px) {
@@ -151,8 +159,6 @@ footer {
   }
 
   .nav {
-    margin: 10px;
-    padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -165,6 +171,8 @@ footer {
     top: 15px;
     right: 15px;
     border: none;
+    width: 30px;
+    height: 30px;
   }
 
   #menu_nav {
