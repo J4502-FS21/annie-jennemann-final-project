@@ -172,8 +172,16 @@ footer {
     font-size: 2em;
   }
 
+  h2 {
+    margin: 10px;
+  }
+
+  h3 {
+    margin: 10px;
+  }
+
   p {
-    margin: 20px;
+    margin: 5px;
   }
 
   .nav {
@@ -200,19 +208,19 @@ footer {
 
   .firetower {
     background-image: url("images/firetower.JPG");
-    min-height: 200px;
-    background-attachment: scroll;
+    min-height: 300px;
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
   }
 
   .osborne {
     background-image: url("images/osborne1.JPG");
-    min-height: 200px;
-    background-attachment: scroll;
+    min-height: 300px;
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
   }
 }
