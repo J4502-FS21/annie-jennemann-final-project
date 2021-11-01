@@ -89,6 +89,10 @@ a:hover {
   color: #88bff1;
 }
 
+.home:hover {
+  color: black;
+}
+
 .firetower {
   background-image: url("images/firetower.JPG");
   min-height: 700px;
@@ -154,16 +158,6 @@ footer {
   padding: 10px;
   background-color: #A3B096;
   font-weight: bold;
-}
-
-@media screen and (min-width:600px) {
-
-  a {
-    text-decoration: none;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.25em;
-    color: black;
-  }
 }
 
 @media screen and (max-width: 599px) {
