@@ -185,13 +185,6 @@ footer {
     margin: 5px;
   }
 
-  .nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  }
-
   #menu_trigger {
     display: block;
     position: absolute;
