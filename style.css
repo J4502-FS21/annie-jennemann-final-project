@@ -209,7 +209,7 @@ footer {
   .firetower {
     background-image: url("images/firetower.JPG");
     min-height: 300px;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -218,7 +218,7 @@ footer {
   .osborne {
     background-image: url("images/osborne1.JPG");
     min-height: 300px;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
