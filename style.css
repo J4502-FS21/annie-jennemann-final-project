@@ -89,6 +89,24 @@ a:hover {
   color: #88bff1;
 }
 
+.firetower {
+  background-image: url("images/firetower.JPG");
+  min-height: 700px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.osborne {
+  background-image: url("images/osborne1.JPG");
+  min-height: 700px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .photo {
   border: 0;
   margin: 10px;
@@ -97,9 +115,9 @@ a:hover {
   max-width: 400px;
 }
 
-.photo:hover {
+/* .photo:hover {
   opacity: 40%;
-}
+} */
 
 #photocontainer {
   display: flex;
