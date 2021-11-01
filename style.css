@@ -197,4 +197,22 @@ footer {
     display: none;
     flex-direction: column;
   }
+
+  .firetower {
+    background-image: url("images/firetower.JPG");
+    min-height: 700px;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .osborne {
+    background-image: url("images/osborne1.JPG");
+    min-height: 700px;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
