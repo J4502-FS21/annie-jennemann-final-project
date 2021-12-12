@@ -1,5 +1,7 @@
 "use strict";
 
+
+
 var menuNav = document.getElementById("menu_nav");
 
 var menuTrigger = document.getElementById('menu_trigger');
@@ -22,3 +24,31 @@ function checkWindowSize() {
 menuTrigger.onclick = menuToggle;
 
 window.onresize = checkWindowSize;
+
+
+
+
+function openGraphic(evt, yearName) {
+  var i, tabcontent, tablinks;
+
+  tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+
+  document.getElementById(yearName).style.display = "block";
+  evt.currentTarget.className += " active";
+
+}
+
+  document.getElementById("defaultOpen").click();
+
+
+
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}

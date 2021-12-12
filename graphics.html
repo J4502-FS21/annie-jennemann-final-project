@@ -2,12 +2,13 @@
 
 <html lang="en">
 <head>
-  <title> Wildfires in Missouri </title>
+  <title> Missouri wildfire data </title>
   <meta charset="utf-8">
   <meta name="description" content="Annie Jennemann's final project for J7502.">
   <meta name="author" content="Annie Jennemann">
   <meta name="keywords" content="Annie Jennemann, 7502, Missouri, wildfire"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://d3js.org/d3.v7.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Playfair+Display&display=swap" rel="stylesheet">
@@ -23,10 +24,16 @@
     </div>
   </a>
 
+  <div class="header">
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+  </div>
+
     <nav>
       <ul id="menu_nav">
         <li><a href="index.html">Overview</a></li>
-        <li><a href="page2.html">Fire detection</a></li>
+        <li><a href="firedetection.html">Fire detection</a></li>
         <li><a href="graphics.html">Wildfire data in Missouri</a></li>
         <li><a href="photos.html">Fire lookout photos</a></li>
     </ul>
@@ -36,28 +43,35 @@
 
   <h2> Wildfire data in Missouri </h2>
 
-      <p>This page is currently under construction. I am conducting a data analysis of wildfires in Missouri from 2002-2020 that includes location, cause of fire and the number of acres burned. I am also currently working on getting some statistics about controlled or prescribed burns in Missouri — which are actually extremely important to maintaining Missouri’s lands. Check back soon for some great data and graphics on this. </p>
 
-      <img class="graphic" src="images/graphfill-01.png" alt="Graphic placeholder" />
+  <iframe title="Wildfires' reported cause of unknown had the highest acres burned in 2020 in Missouri" aria-label="Bar Chart" id="datawrapper-chart-Snstz" src="https://datawrapper.dwcdn.net/Snstz/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 60% !important; border: none;" height="487"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+</script>
 
-      <p>This page is currently under construction. I am conducting a data analysis of wildfires in Missouri from 2002-2020 that includes location, cause of fire and the number of acres burned. I am also currently working on getting some statistics about controlled or prescribed burns in Missouri — which are actually extremely important to maintaining Missouri’s lands. Check back soon for some great data and graphics on this. </p>
+    <div class="tab">
+      <button class="tablinks" onclick="openGraphic(event, 'Missouri acres burned in 2020')" id="defaultOpen">Missouri acres burned in 2020</button>
+      <button class="tablinks" onclick="openGraphic(event, 'Missouri wildfire reports in 2020')">Missouri wildfire reports in 2020</button>
+    </div>
 
-      <img class="graphic" src="images/graphfill-01.png" alt="Graphic placeholder" />
+    <div id="Missouri acres burned in 2020" class="tabcontent">
+      <iframe title="Washington County had a significantly higher number of acres burned from wildfires in 2020" aria-label="Map" id="datawrapper-chart-4HYc2" src="https://datawrapper.dwcdn.net/4HYc2/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 60% !important; border: none;" height="611"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+</script>
+    </div>
 
-      <p>This page is currently under construction. I am conducting a data analysis of wildfires in Missouri from 2002-2020 that includes location, cause of fire and the number of acres burned. I am also currently working on getting some statistics about controlled or prescribed burns in Missouri — which are actually extremely important to maintaining Missouri’s lands. Check back soon for some great data and graphics on this. </p>
+    <div id="Missouri wildfire reports in 2020" class="tabcontent">
+      <iframe title="153 wildfires were reported in Camden County in 2020" aria-label="Map" id="datawrapper-chart-5ar3Q" src="https://datawrapper.dwcdn.net/5ar3Q/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 60% !important; border: none;" height="586"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+  </script>
+    </div>
 
-      <img class="graphic" src="images/graphfill-01.png" alt="Graphic placeholder" />
+    <br></br>
+    <br></br>
 
-      <p>This page is currently under construction. I am conducting a data analysis of wildfires in Missouri from 2002-2020 that includes location, cause of fire and the number of acres burned. I am also currently working on getting some statistics about controlled or prescribed burns in Missouri — which are actually extremely important to maintaining Missouri’s lands. Check back soon for some great data and graphics on this. </p>
+    <iframe title="Number of wildfire reports by month fluctuated over 20 years in Missouri" aria-label="Interactive area chart" id="datawrapper-chart-HawO8" src="https://datawrapper.dwcdn.net/HawO8/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 70% !important; border: none;" height="483"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+</script>
 
-      <img class="graphic" src="images/graphfill-01.png" alt="Graphic placeholder" />
+<iframe title="Acres burned from wildfires in Missouri differs for the past two decades" aria-label="Interactive area chart" id="datawrapper-chart-XlEqD" src="https://datawrapper.dwcdn.net/XlEqD/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 70% !important; border: none;" height="477"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+</script>
 
-      <p>This page is currently under construction. I am conducting a data analysis of wildfires in Missouri from 2002-2020 that includes location, cause of fire and the number of acres burned. I am also currently working on getting some statistics about controlled or prescribed burns in Missouri — which are actually extremely important to maintaining Missouri’s lands. Check back soon for some great data and graphics on this. </p>
 
-      <img class="graphic" src="images/graphfill-01.png" alt="Graphic placeholder" />
-
-      <p>This page is currently under construction. I am conducting a data analysis of wildfires in Missouri from 2002-2020 that includes location, cause of fire and the number of acres burned. I am also currently working on getting some statistics about controlled or prescribed burns in Missouri — which are actually extremely important to maintaining Missouri’s lands. Check back soon for some great data and graphics on this. </p>
-      <img class="graphic" src="images/graphfill-01.png" alt="Graphic placeholder" />
 
 <footer> Text, graphics, photos, illustrations and web design by Annie Jennemann. </footer>
 

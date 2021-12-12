@@ -2,7 +2,7 @@
 
 <html lang="en">
 <head>
-  <title> Wildfires in Missouri </title>
+  <title> Photo gallery: Fire lookout </title>
   <meta charset="utf-8">
   <meta name="description" content="Annie Jennemann's final project for J7502.">
   <meta name="author" content="Annie Jennemann">
@@ -23,10 +23,16 @@
     </div>
   </a>
 
+  <div class="header">
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+  </div>
+
     <nav>
       <ul id="menu_nav">
         <li><a href="index.html">Overview</a></li>
-        <li><a href="page2.html">Fire detection</a></li>
+        <li><a href="firedetection.html">Fire detection</a></li>
         <li><a href="graphics.html">Wildfire data in Missouri</a></li>
         <li><a href="photos.html">Fire lookout photos</a></li>
     </ul>
@@ -34,6 +40,10 @@
     </nav>
 
   <h2> Look at a lookout </h2>
+
+  <div id="overlay" onclick="off()">
+    <img class="photozoom" src="images/fire1.JPG" alt="A view from the bottom of the fire lookout tower at Runge Conservation Nature Center looking up to the top." />
+  </div>
 
   <div id="phototext">
   <p> The Runge Conservation Center, located in Jefferson City, Mo., is home to a 55-foot fire lookout tower.
@@ -44,8 +54,9 @@
   <div id="photocontainer">
 
     <div class="captioncontainer">
-      <img class="photo" src="images/fire1.JPG" alt="A view from the bottom of the fire lookout tower at Runge Conservation Nature Center looking up to the top." />
+      <img class="photo" src="images/fire1.JPG" onclick="on()" alt="A view from the bottom of the fire lookout tower at Runge Conservation Nature Center looking up to the top." />
       <p class="caption"> A view from the bottom of the fire tower at the Runge Conservation Nature Center on Oct. 16. </p>
+
     </div>
 
     <div class="captioncontainer">
