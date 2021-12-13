@@ -36,19 +36,14 @@ function openGraphic(evt, yearName) {
       tabcontent[i].style.display = "none";
     }
 
+tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+  tablinks[i].className = tablinks[i].className.replace(" active", "");
+}
+
   document.getElementById(yearName).style.display = "block";
-  evt.currentTarget.className += " active";
+  evt.currentTarget.className += " active", "";
 
 }
 
   document.getElementById("defaultOpen").click();
-
-
-
-function on() {
-  document.getElementById("overlay").style.display = "block";
-}
-
-function off() {
-  document.getElementById("overlay").style.display = "none";
-}
