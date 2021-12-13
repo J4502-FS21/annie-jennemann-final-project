@@ -1,6 +1,5 @@
 body {
   background: #A7CFF2;
-  /* background: #88bff1;*/
   text-align: center;
   margin: auto;
   padding: auto;
@@ -38,7 +37,7 @@ p {
   font-size: 1em;
   margin-left: auto;
   margin-right: auto;
-  padding: 40px;
+  padding: 10px;
   max-width: 600px;
   text-align: left;
 }
@@ -109,11 +108,10 @@ a:hover {
 
 .photo {
   border: 10px solid #E88A76;
-  margin: 10px;
+  margin: 20px;
   max-width: 650px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
-
 
 #button_previous {
   background-color: #0E5899;
@@ -121,7 +119,7 @@ a:hover {
   font-family: 'Lato', sans-serif;
   font-size: 2em;
   color: white;
-  margin-right: 175px;
+  margin-right: 75px;
   margin-top: 20px;
   padding-left: 10px;
   padding-right: 10px;
@@ -138,7 +136,7 @@ a:hover {
   font-family: 'Lato', sans-serif;
   font-size: 2em;
   color: white;
-  margin-left: 175px;
+  margin-left: 75px;
   margin-top: 20px;
   padding-left: 10px;
   padding-right: 10px;
@@ -150,9 +148,10 @@ a:hover {
 }
 
 figcaption {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
   margin-top: 0px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -272,19 +271,16 @@ footer {
     width: auto;
     border-bottom: 10px solid #A3B096;
 
-}
+  }
 
-.firetower {
-  background-attachment: scroll;
-  max-height: 100px;
-}
+  .firetower {
+    background-attachment: scroll;
+    max-height: 100px;
+  }
 
-.osborne {
-  background-image: url("images/osborne1.JPG");
-  min-height: 700px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+  .osborne {
+    background-attachment: scroll;
+    max-height: 100px;
+  }
+
 }
