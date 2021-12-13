@@ -107,15 +107,10 @@ a:hover {
 }
 
 .photo {
-  border: 4px solid #CF4B2B;
+  border: 10px solid #E88A76;
   margin: 10px;
-  max-width: 800px;
-}
-
-#photocontainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  max-width: 650px;
+  margin-bottom: 40px;
 }
 
 
@@ -133,6 +128,7 @@ a:hover {
 
 #button_previous:hover {
   opacity: 70%;
+  cursor: pointer;
 }
 
 #button_next {
@@ -149,11 +145,13 @@ a:hover {
 
 #button_next:hover {
   opacity: 70%;
+  cursor: pointer;
 }
 
-.caption {
+figcaption {
   font-family: 'Playfair Display', serif;
   margin-top: 0px;
+  margin-bottom: 40px;
   text-align: center;
 }
 
@@ -206,6 +204,10 @@ footer {
 @media screen and (max-width: 699px) {
   h1 {
     font-size: 1.5em;
+  }
+
+  .photo {
+    max-width: 400px;;
   }
 }
 
@@ -261,5 +263,9 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .photo {
+    max-width: 400px;;
   }
 }
