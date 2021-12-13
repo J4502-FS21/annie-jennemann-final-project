@@ -23,6 +23,7 @@ h2 {
 h3 {
   font-family: 'Lato', sans-serif;
   font-size: 1.25em;
+  margin-top: 40px;
 }
 
 li {
@@ -69,8 +70,8 @@ p {
 }
 
 .firehead {
-  width: 100%;
-  opacity: 70%;
+  width: 60%;
+  opacity: 60%;
 }
 
 a {
@@ -155,6 +156,11 @@ figcaption {
   text-align: center;
 }
 
+#graphicscontainer {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .tab {
   background-color: #A3B096;
   margin-left: 50px;
@@ -201,7 +207,16 @@ footer {
   font-weight: bold;
 }
 
+@media screen and (max-width: 950px) {
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+}
+
 @media screen and (max-width: 699px) {
+
   h1 {
     font-size: 1.5em;
   }
@@ -209,8 +224,8 @@ footer {
   .photo {
     max-width: 400px;;
   }
-}
 
+}
 
 @media screen and (max-width: 599px) {
 
@@ -222,10 +237,12 @@ footer {
 
   h2 {
     margin: 10px;
+    margin-top: 30px;
   }
 
   h3 {
     margin: 10px;
+    margin-top: 40px;
   }
 
   p {
@@ -242,30 +259,32 @@ footer {
     height: 30px;
   }
 
+  #menu_trigger:hover {
+    cursor: pointer;
+  }
+
   #menu_nav {
     display: none;
     flex-direction: column;
   }
 
-  .firetower {
-    background-image: url("images/firetower.JPG");
-    min-height: 300px;
-    background-attachment: scroll;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  .line {
+    width: auto;
+    border-bottom: 10px solid #A3B096;
 
-  .osborne {
-    background-image: url("images/osborne1.JPG");
-    min-height: 300px;
-    background-attachment: scroll;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+}
 
-  .photo {
-    max-width: 400px;;
-  }
+.firetower {
+  background-attachment: scroll;
+  max-height: 100px;
+}
+
+.osborne {
+  background-image: url("images/osborne1.JPG");
+  min-height: 700px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 }
