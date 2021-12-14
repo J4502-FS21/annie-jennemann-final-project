@@ -109,7 +109,7 @@ a:hover {
 .photo {
   border: 10px solid #E88A76;
   margin: 20px;
-  max-width: 650px;
+  max-width: 50%;
   margin-bottom: 20px;
 }
 
@@ -212,16 +212,14 @@ footer {
     font-size: 1.5em;
   }
 
-}
-
-@media screen and (max-width: 699px) {
-
-  h1 {
-    font-size: 1.5em;
+  figcaption {
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width:
   }
 
   .photo {
-    max-width: 400px;;
+    max-width: 60%;
   }
 
 }
@@ -245,7 +243,7 @@ footer {
   }
 
   p {
-    margin: 5px;
+    margin: 10px;
   }
 
   #menu_trigger {
@@ -269,8 +267,7 @@ footer {
 
   .line {
     width: auto;
-    border-bottom: 10px solid #A3B096;
-
+    border-bottom: 15px solid #A3B096;
   }
 
   .firetower {
