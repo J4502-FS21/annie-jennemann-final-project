@@ -219,7 +219,7 @@ footer {
   }
 
   .photo {
-    max-width: 60%;
+    max-width: 80%;
   }
 
 }
@@ -241,7 +241,7 @@ footer {
   }
 
   p {
-    margin: 10px;
+    margin: 15px;
   }
 
   #menu_trigger {
